@@ -1,0 +1,326 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 27px; 
+    box-sizing: border-box;
+    word-spacing: 3px; 
+	font-size: 16px; 
+}
+div#container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+
+div#back{
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, auto);
+    background-image: url(https://i.pinimg.com/originals/c6/cb/32/c6cb32cabb3eb59d260b007d37202b55.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+/* start of navigation */
+div#heading{
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+div.fixedNav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(186,193,209,255);
+    z-index: 99;
+}
+div#heading header{
+    grid-column: 1 / 5;
+    font-size: 1.7vw;
+    font-family: 'Roboto Slab';
+    color: white;
+    font-weight: 400;
+    padding-left: 30px;
+    text-shadow: 1px 1px 1px #384046;
+    
+}
+nav#navbar{
+    grid-column: 7 / 13;
+    font-size: 1.5vw;
+}
+nav#navbar ul{
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+nav#navbar a{  
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #384046;
+}
+nav#navbar a:hover{
+    color: #6a6f74;
+}
+nav#navbar a:focus{
+    color: #43494e;
+}
+
+
+/* end of navigation */
+
+/* start of welcome section */
+section#welcome-section{
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+    text-align: center;
+    height: 100vh;
+}
+h1#welcome-header{
+    font-family: 'Roboto Slab';
+    font-size: 60px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 2px #252b30;
+    text-align: center;
+    margin-top: 240px;
+    margin-bottom: 30px;
+}
+section#welcome-section p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* end of welcome section */
+
+
+
+
+/* start of project section */
+section#projects{
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+section#projects h2{
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Roboto Slab';
+    font-size: 40px;
+    font-weight: 300;
+    color: #191d20;
+    text-shadow: 1px 1px 2px #252b30;
+}
+div#projects-box{
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+div#projects-box a{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    border: 2px solid #6e7479;
+    box-shadow: 1px 1px 6px 1px #47494b;
+    text-align: center;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: 400;
+    color: #4d5257;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px #47494b;
+    transition: transform 1s; 
+}
+div#projects-box a:hover{
+    transform: translate(0px, 20px);
+}
+div#projects-box img{
+    width: 100%;
+}
+/* end of project section */
+
+
+
+
+/* start of contact section */
+section#contact{
+    grid-column: 1 / 13;
+    grid-row: 3 / 4;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    background-color: rgba(186,193,209,255);
+}
+section#contact h2{
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Roboto Slab';
+    font-size: 40px;
+    font-weight: 300;
+    color: #191d20;
+    text-shadow: 1px 1px 2px #252b30;
+}
+section#contact p{
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 35px;
+}
+div#social-media-links{
+    grid-column: 1 / 13;
+    grid-row: 3 / 4;
+    text-align: center;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+a#facebook{
+    grid-column: 1 / 4;
+}
+a#instagram{
+    grid-column: 4 / 7;
+}
+a#profile-link{
+    grid-column: 7 / 10;
+}
+a#gmail{
+    grid-column: 10 / 13;
+}
+div#social-media-links a{
+    font-size: 30px;
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    text-decoration: none;
+    color: #191d20;
+    text-shadow: 0px 1px 1px #252b30;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+div#social-media-links a:hover{
+    color: #454a4e;
+    text-shadow: 0px 1px 1px #4d5155;
+}
+div#social-media-links span{
+    padding-right: 10px;
+}
+/* end of  contact section */
+
+
+
+
+
+/* start of footer section */
+footer{
+    grid-column: 1 / 13;
+    grid-row: 4 / 5;
+    background-color: rgba(112,115,126, 0.5);
+    text-align:center;
+}
+footer p{
+    margin: 0px;
+    color: #191d20;
+}
+/* end of footer section */
+
+
+
+
+
+/* start of tablet site design for heading and footer site */
+@media screen and (max-width: 769px){
+    h1#welcome-header{
+        line-height: 65px;
+    }
+    section#projects h2{
+        line-height: 40px;
+    }
+    section#contact h2{
+        line-height: 40px;
+    }
+    div#social-media-links{
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    a#facebook{
+        grid-column: 1 / 7;
+        grid-row: 1 / 2;
+        margin-bottom: 30px;
+    }
+    a#instagram{
+        grid-column: 7 / 13;
+        grid-row: 1 / 2;
+        margin-bottom: 30px;
+    }
+    a#profile-link{
+        grid-column: 1 / 7;
+        grid-row: 2 / 3;
+        margin-bottom: 30px;
+    }
+    a#gmail{
+        grid-column: 7 / 13;
+        grid-row: 2 / 3;
+        margin-bottom: 30px;
+    }
+}
+/* end of tablet site design for heading and footer site */
+
+
+/* start of mobile site design for heading and footer site */
+@media screen and (max-width: 481px){
+    div#social-media-links{
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+    a#facebook{
+        grid-column: 1 / 13;
+        grid-row: 1 / 2;
+    }
+    a#instagram{
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;
+    }
+    a#profile-link{
+        grid-column: 1 / 13;
+        grid-row: 3 / 4;
+    }
+    a#gmail{
+        grid-column: 1 / 13;
+        grid-row: 4 / 5;
+    }
+}    
+/* end of mobile site design for heading and footer site */

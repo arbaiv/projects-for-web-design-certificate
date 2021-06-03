@@ -1,0 +1,187 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 27px;  
+    box-sizing: border-box;
+    word-spacing: 4px; 
+	font-size: 16px; 
+}
+div#container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+nav#navbar{
+    grid-column: 1 / 4;
+    grid-row: auto;
+    width: 25%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    overflow-y: scroll;
+    border-right: 2px solid #252b30bb;
+    background: linear-gradient(162deg, rgba(207, 213, 214, 0.9) 48%, rgba(181, 189, 189, 0.801) 71%);
+}
+/* start of navigation design */
+header#title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    font-weight: 250;
+    color: #191d20;
+    text-shadow: 1px 1px 2px #252b30;
+    border-bottom: 1px solid #252b30bb;
+    text-align: center;
+    line-height: 40px;
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style-position: inside;
+    list-style-type: none;
+}
+nav li{
+    margin-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    border-bottom: 1px solid #252b30bb;
+}
+a.nav-link{
+    color: #252b30;
+    font-size: 25px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    text-decoration: none;
+}
+a.nav-link:hover{
+    color: #676a6d;
+}
+/* end of navigation design */
+
+
+/*start of main content design */
+main#main-doc{
+    grid-column: 4 / 13;
+    grid-row: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, auto);
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    background: linear-gradient(162deg, rgba(245, 248, 248, 0.9) 48%, rgba(237, 238, 238, 0.911) 71%);
+    color: #45464b;
+}
+section.main-section{
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+header{
+    grid-column: 1 / 10;
+    grid-row: 1 / 2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-family: 'Roboto Slab';
+    font-size: 40px;
+    font-weight: 300;
+    color: #191d20;
+    text-shadow: 1px 1px 2px #252b30;
+}
+article{
+    grid-column: 1 / 10;
+    grid-row: 2 / 3;
+    padding-left: 20px;
+}
+article ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-position: outside;
+    margin-left: 85px;
+    margin-top: -6px;
+}
+section#Introduction{
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+}
+section#History{
+    grid-column: 1 /13;
+    grid-row: 2 / 3;
+}
+section#Tools_and_Technologies{
+    grid-column: 1 / 13;
+    grid-row: 3 / 4;
+}
+section#Skills_and_Techniques{
+    grid-column: 1 / 13;
+    grid-row: 4 / 5;
+}
+section#Page_Layout{
+    grid-column: 1 / 13;
+    grid-row: 5 / 6;
+}
+section#Typography{
+    grid-column: 1 / 13;
+    grid-row: 6 / 7;
+}
+section#Motion_Graphics{
+    grid-column: 1 / 13;
+    grid-row: 7 / 8;
+}
+section#Quality_of_Code{
+    grid-column: 1 / 13;
+    grid-row: 8 / 9;
+}
+section#Generated_Content{
+    grid-column: 1 / 13;
+    grid-row: 9 / 10;
+}
+section#Home_Page_Design{
+    grid-column: 1 / 13;
+    grid-row: 10 / 11;
+}
+
+
+
+
+
+/* start of tablet site design for heading and footer site */
+@media screen and (max-width: 769px){
+    div#container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    nav#navbar{
+        grid-column: 1 / 13;
+        grid-row: 1 / 2;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 325px;
+        overflow-y: scroll;
+        z-index: 10;
+        border-bottom: 2px solid #252b30bb; 
+        background-color: white;
+    }
+    main#main-doc{
+        margin-top: 300px;
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+}
+
+
+
+
+
+/* end of tablet site design for heading and footer site */

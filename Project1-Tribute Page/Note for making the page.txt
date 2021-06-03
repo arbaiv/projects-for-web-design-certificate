@@ -1,0 +1,20 @@
+1st of all find the person that I am gonna write a portfolio on
+Then I have to include this informations in my web page (similar to this page link: https://codepen.io/freeCodeCamp/full/zNqgVx)
+
+1. The whole page should be in a div element that has an id="main" attribute
+
+2. then a big title of that person and the element that will contain the title element should have an id="title"
+
+3. there should be a big image of that guy in a div element with id="img-div" 
+
+4. in that id="img-div" element, insert a figure element and put the picture of the person inside of figure in an img empty element and that empty element should have an id tag of id="image"
+
+5. in that id="img-div" element, at the end of that picture there should be a figcaption element about the picture and figcaption should have an id="img-caption"
+
+6. there should be an element that holds information about that person and it should have an id="tribute-info"
+
+7. there should be an A element that leads outside of the page to another page that contains more information about that guy
+
+8. The image should be responsive and shouldn't exceed its normal size
+
+9. The image should be centered within its parent element
